@@ -8,10 +8,19 @@ import '../sass/css.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './react/app'
+import Stream from './react/components/stream';
+
+const tracks = [
+  {
+    title: 'Some track'
+  },
+  {
+    title: 'Some other track'
+  }
+];
 
 ReactDOM.render(
-	<App />,
-	document.getElementById('app')
+  <Stream tracks={tracks} />,
+  document.getElementById('app')
 );
 
